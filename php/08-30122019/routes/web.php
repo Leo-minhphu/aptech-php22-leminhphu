@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 Route::get("/control","Controller@testcontroller");
 Route::get("/control2","Controller@testcontroller2");
+
+//bài tập về nhà
+Route::get("/product","ProductController@hienThiSanPham");
