@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+    section { display:flex;    
+    }
+    
+    div {width: 400px;
+    height: 200px;margin:1px
+    }
+
+
+    #left {
+        background-color:darkblue 
+    }
+    #main {
+        background-color:white;
+    }
+    #right {
+        background-color:red
+    }
+    @media screen and (max-width: 1000px) {
+    #left {background-color: black}
+    #main {background-color: orange}
+    #right{background-color: red}
+    section {display:flex}  
+
+    }
+    @media screen and (max-width: 500px){
+    #left {background-color: black}
+    #main {background-color: red}
+    #right{background-color: orange}
+    section{display: inline}
+
+    }
+  
+        
+    
+    </style>
+   
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div id="left"></div>
+        <div id="main"></div>
+        <div id="right"></div>
+
+
+    </section> 
+    
+</body>
+</html>

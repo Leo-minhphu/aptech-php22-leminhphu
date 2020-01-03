@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1 id="demo">PHP21</h1>
+    <button onclick="nam.quetnha();">Click </buton>
+    <!-- <script>
+        var a="toi di lay choi";
+        var b="toi quet nha";
+        var c="nha sach roi ahii";
+        var tong= a + b + c;
+    
+    function quetnha(){
+        console.log(a);
+        console.log('b');
+        console.log('c')
+           }     
+    console.log(tong)       
+          
+        </script> -->
+     <!-- <script>
+         var nam = {
+             name: "Nguyen Hai Nam",
+             age: 99,
+             website:"Namcoi.com",
+             quetnha: function() {
+        console.log("toi di lay choi");
+        console.log('toi quet nha');
+        console.log('nha sach roi ahii')
+             }
+         }
+      
+         console.log(nam.name)
+         console.log(nam.quetnha)
+         
+     
+     </script> -->
+      <script>
+            var nam = {
+                name: "Nguyen Hai Nam",
+                age: 99,
+                website:"Namcoi.com",
+                quetnha: function(tennha) {
+                    return { trangthai:"nha cua" +tenNha+"sach roi"}
+          
+                }
+            }
+           
+           console.log(nam.quetnha("Trinh").trangthai);
+        
+        
+        </script>
+        <!-- <script>
+                var nam = {
+                    name: "Nguyen Hai Nam",
+                    age: 99,
+                    website:"Namcoi.com",
+                    quetnha: function(tennha) {
+                        return { trangthai:"nha cua" +tenNha+"sach roi"}
+              
+                    }
+                }
+               
+               console.log(nam.quetnha("Trinh").trangthai);
+            
+            
+            </script>             -->
+
+
+
+</body>
+</html>

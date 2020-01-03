@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./boostrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+        <header>
+        </header>
+        <section>
+            <div class="container ">
+                <div class="row">
+                        <div class="col-12 bg-light d-flex flex-column justify-content-center align-items-center p-5 m-5">
+                            <div class="d-flex justify-content-center align-items-center "style="height: 100px; width: 100px; background-color: #563D7C;
+                              border-radius: 15px;">
+                             <h1 style="font-size: 65px; color: aliceblue ">B</h1>
+                            </div>
+                            <h3>Checkout form</h3>
+                            <p class="text-center">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>                                             
+                        </div>
+                </div> 
+                </div>
+                <div class="container mb-5 ">
+                    <div class="row">
+                        <div class="col-md-8 bg-light">
+                            <h4>Billing Address</h4>
+                            <form>
+                                <div class="row">
+                                    <div class="col-6">
+                                        Firstname<br>
+                                        <input type="text" name="firstname" class="w-100"><br>
+                                    </div>
+                                    <div class="col-6">
+                                            Lastname<br>
+                                            <input type="text" name="lastname" class="w-100"><br><br>
+                                    </div>                                              
+                                </div>
+                                <div>
+                                    Username<br>
+                                    <input type="text" placeholder="Username" class="w-100"><br><br>
+                                </div>
+                                <div>
+                                    Email (Optional)<br>
+                                    <input type="email" placeholder="you@example.com" class="w-100"><br><br>
+                                </div>
+                                <div>
+                                    Address<br>
+                                    <input type="text" placeholder="1234 main street" class="w-100"><br><br>
+                                </div>
+                                <div>
+                                    Address 2 (Optional)<br>
+                                    <input type="text" placeholder="Apartment or suite" class="w-100"><br><br>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        "Country <br>
+                                        <select class="custom-select" >
+                                                <option >Choose...</option>
+                                                <option>United States</option>
+                                        </select> <br>
+                                    </div>
+                                    <div class="col-4">
+                                            "State <br>
+                                            <select class="custom-select " >
+                                                    <option >Choose...</option>
+                                                    <option>California</option><br>
+                                            </select>
+                                    </div>
+                                    <div class="col-4">
+                                            ZIP <br>
+                                            <input type="number" name="Zip">
+                                    </div>
+                                <hr>
+
+                                </div>
+                                <hr>
+                                <input type="checkbox" class="m-2" value="Shipping address is the same as my billing address">Shipping address is the same as my billing address<br>
+                                <input type="checkbox" class="m-2"value="Save this information for next time">Save this information for next time<br>
+                                <hr>
+                                <h4>Payment</h4>
+                                <div>
+                                    <input type="radio" class="m-2" value="Credit card">Credit card<br>
+                                    <input type="radio" class="m-2" value="Debit card">Debit card<br>
+                                    <input type="radio" class="m-2" value="Paypal">Paypal<br><br>                              
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        Name on card <br>
+                                        <input type="text" name="name on card" class="w-100"> 
+                                        <p class="text-muted">Full name as displayed on card</p><br>
+                                    </div>
+                                    <div class="col-6">
+                                        Credit card number
+                                        <input type="text" name="Credit card number" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        Expiration<br>
+                                        <input type="number"> <br>
+                                    </div>
+                                    <div class="col-3">
+                                        CVV<br>
+                                        <input type="number"> <br>
+                                    </div>
+                                </div>
+                                <hr>
+                                <input type="submit" value="Continute to check out" class="w-100 bg-primary btn" style="color:aliceblue">
+                            </form>
+
+                           
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                             <h4>Your cart</h4>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item ">
+                                    <div class=" d-flex d-flex justify-content-between">
+                                     <h6>Product name</h6>
+                                     <span>$12</span>
+                                    </div>
+                                    <small class="text-mute">
+                                        Brief description</small>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="d-flex justify-content-between">
+                                        <h6>Second product</h6>                                    
+                                        <span>$8</span>
+                                    </div>
+                                    <small class="text-mute">
+                                            Brief description</small>
+                                </li>
+                                <li class="list-group-item ">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Third item</h6>                                    
+                                            <span>$5</span>
+                                        </div>
+                                        <small class="text-mute">
+                                                Brief description</small>
+                                </li>
+                                <li class="list-group-item " style="color: forestgreen">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Promo code</h6>
+                                            <span>-$5</span>
+                                        </div>
+                                        <small class="text-mute">                                           EXAMPLECODE</small>
+                                </li>
+                                
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <h6>Total (USD)</h6>
+                                    <span >$20</span>
+                                </li>
+                              </ul>
+                              <div class="card">
+                                    <div class="input-group p-3">
+                                            <input type="text" class="form-control" placeholder="Promo code">
+                                            <button class="bg-dark text-white">Redeem</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                              
+                        </div>
+
+                        </div>
+                    </div>
+
+                </div>
+        
+            </section>
+            <footer>
+        
+            </footer>
+        
+</body>
+</html>

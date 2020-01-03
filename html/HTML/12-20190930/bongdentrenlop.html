@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bongdentrenlop</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section>
+            <img id="bongden" src="https://www.w3schools.com/js/pic_bulboff.gif">
+            
+            <button onclick="batbongden()">Bat bong den</button>
+           
+            <button onclick="tatbongden()">Tat bong den</button>
+
+            <button onclick="battatbongden()">Bat/Tatbongden</button>
+         
+
+    </section>
+    <footer>
+            <script>
+
+                    var chonanh= document.getElementById("bongden");                 
+                    function batbongden(){                       chonanh.src ="https://www.w3schools.com/js/pic_bulbon.gif";
+                    }
+
+
+                    function tatbongden(){
+                        chonanh.src ="https://www.w3schools.com/js/pic_bulboff.gif";       
+                    }
+                    function battatbongden(){
+                        var kiemtra = chonanh.src =="https://www.w3schools.com/js/pic_bulboff.gif";
+                        
+                        if (kiemtra == true){
+                            chonanh.src="https://www.w3schools.com/js/pic_bulbon.gif"
+                        }
+                        else{chonanh.src="https://www.w3schools.com/js/pic_bulboff.gif"
+                        }
+                    }
+                           console.log("sasa")
+             </script>
+    </footer>
+    
+</body>
+</html>

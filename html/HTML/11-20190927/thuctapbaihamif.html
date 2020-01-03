@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements( thuc tap ham if voi bat/tat them chu</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="demo"></p>
+<button onclick="test()">test</button>
+<button onclick="battat()">battat</button>
+
+<script>
+var x, y, z;  // Statement 1
+x = 5;    // Statement 2
+y = 6;    // Statement 3
+z = x + y;  // Statement 4
+
+var themchu=document.getElementById("demo");
+
+function test(){
+    themchu.innerHTML =
+"The value of z is " + z + ".";  }
+
+
+function battat(){
+var themchu=document.getElementById("demo");
+var kiemtra= themchu.innerHTML =="";
+if (kiemtra==true){
+    themchu.innerHTML="The value of z is " + z + ".";  }
+    else{
+        themchu.innerHTML=""}
+    }
+
+</script>
+
+</body>
+</html>

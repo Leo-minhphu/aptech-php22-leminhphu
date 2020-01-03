@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Baitapbongden 2 button</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section>
+            <img id="bongden" src="https://www.w3schools.com/js/pic_bulboff.gif"><br>
+
+            
+            <button onclick="batbongden()">batbongden</button>
+            <button onclick="tatbongden()">tatbongden
+            </button><br>
+            <br>
+            <button onclick="battatbongden ()">Bat/tatbongden</button>
+            
+            
+         
+
+  
+        
+       
+
+    </section>
+    <footer>
+            <script>          
+                    // function batbongden(){
+                    //     document.getElementById("bongden").src="https://www.w3schools.com/js/pic_bulbon.gif "
+        
+                    // }
+        
+                    // function tatbongden(){
+                    //     document.getElementById("bongden").src="https://www.w3schools.com/js/pic_bulboff.gif "
+        
+                    // }              
+                    var thayanh= document.getElementById("bongden");
+                    
+                    function batbongden(){
+                        thayanh.src="https://www.w3schools.com/js/pic_bulbon.gif"
+                    }
+                    function tatbongden(){
+                        thayanh.src="https://www.w3schools.com/js/pic_bulboff.gif"
+                    }
+                   
+        
+                    function battatbongden(){
+                    var kiemtra = thayanh.src == "https://www.w3schools.com/js/pic_bulboff.gif";
+                    // var kiemtra =thayanh.src.includes ("off.gif");
+    
+                    if (kiemtra== true){
+                        thayanh.src="https://www.w3schools.com/js/pic_bulbon.gif";}
+                        
+                    else{
+                         thayanh.src="https://www.w3schools.com/js/pic_bulboff.gif"}
+                    }
+        
+            </script>
+    
+ 
+    </footer>
+    
+</body>
+</html>

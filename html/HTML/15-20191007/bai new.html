@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./boostrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.css">
+        <style>
+                #div-an{display: none}
+                
+                </style>
+    <title>News</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row d-flex justify-content-between">
+            <button class="btn btn-outline-danger mt-2 ml-3 d-none d-sm-block" >SIGN UP NOW</button>
+            <h1>NEWS</h1>
+            <form class="form-inline d-none d-sm-block ">
+                <!-- //ẩn nội dung, chỉ hiện khi kích thước màn hình>= sm= 768 px  -->
+                 <input class="form-control " type="search" placeholder="Search"><i class="fas fa-search"></i>
+            <form class="form-inline ">
+                    <button class="btn btn-outline-success m-2" >Search</button>
+            </form>
+            <nav class="navbar navbar-light bg-light d-sm-none "> 
+               <!-- chỉ ẩn khi màn hình có kich thước trên =md=768 px -->
+                    <button class="navbar-toggler" >
+                      <span class="navbar-toggler-icon"onclick=hienDiv()></span>
+                    </button>
+                </nav>
+
+        </div>
+        <div id="div-an"class="row m-2">
+             <!-- // div ẩn -->
+                <ul  class="w-100 list-unstyled  ">
+                    <li >HOME</li>
+                    <li >HTML</li>
+                    <li >CSS</li>
+                    <li >JAVASCRIPT</li>
+                    <li >PHP</li>
+                    <li >REACT JS</li>
+                    <li >LARAVEL</li>
+                </ul>
+        </div>
+        
+        <div class="row m-2">
+            <ul  class="w-100 d-flex justify-content-between list-unstyled  ">
+                <li class=" d-none d-sm-block"> &#60;</li>   
+                <li class=" d-none d-sm-block">HOME</li>
+                <li class=" d-none d-sm-block">HTML</li>
+                <li class=" d-none d-sm-block">CSS</li>
+                <li class=" d-none d-sm-block">JAVASCRIPT</li>
+                <li class=" d-none d-sm-block">PHP</li>
+                <li class=" d-none d-sm-block">REACT JS</li>
+                <li class=" d-none d-sm-block">LARAVEL</li>
+                <li class=" d-none d-sm-block">&#62;</li>
+            </ul>
+        </div>
+
+       
+        <div class="row ">
+            <div class="col-6 col-sm-4 pr-0">
+                    <div class="card h-100" style="background-image:url(https://images.unsplash.com/photo-1538004875862-6c37caafbb38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60); background-position: center; background-size: cover; ">     
+                        <div class="card-body " style ="margin-top: 250px">
+                          <h5 class="card-title"style="color: aliceblue">Card title</h5>
+                          <p class="card-text"style="color: aliceblue">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+                        </div>
+                    </div>
+
+            </div>
+            <div class="col-sm-4  d-none d-sm-block px-1">
+                    <div class="card h-100" style="background-image:url(https://images.unsplash.com/photo-1534559529872-1a83a6cbc03d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=662&q=80); background-position: center; background-size: cover; ">
+                        <div></div>     
+                        <div class="card-body"style ="margin-top: 250px">
+                          <h5 class="card-title" style="color: aliceblue">Card title</h5>
+                          <p class="card-text" style="color: aliceblue">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+                        </div>
+                    </div>
+
+            </div>
+            <div class="col-6 col-sm-4 pl-0">
+                <div class="card ">
+                    <div class="card-body">
+                      <h5 class="card-title ">Hot News</h5>
+                      <ul class=" list-group list-group-flush">
+                      <li class="list-group-item">Some quick example text to.............<i class="fab fa-node-js" style="color: blue"></i> </li>
+                      <li class="list-group-item">Some quick example text to.............<i class="fab fa-js-square"style="color:red"></i> </li>
+                      <li class="list-group-item">Some quick example text to.............<i class="fab fa-lastfm-square"style="color: orange"></i></li>
+                      <li class="list-group-item">Some quick example text to.............<i class="fab fa-html5"style="color: green"></i> </li>
+                      <li class="list-group-item">Some quick example text to.............<i class="fab fa-css3-alt"style="color: orange"></i> </li>
+                       </ul>
+                     </div>
+                 </div>
+            </div>
+         </div>
+         <hr>
+         <script>
+                var getid=document.getElementById('div-an')
+                function hienDiv() {
+                    var kiemtra = getid.style.display=="none";
+                    if (kiemtra== true){
+                     getid.style.display ="block";}  
+                     else{getid.style.display ="none";} 
+                }  
+        </script>
+    </header>
+    
+    <section>
+        <div class="container-fluid ">
+            <div class="row justify-content-between align-content-center m-2">
+                <h5 class="btn btn-success">Feature</h5>
+                <p class="btn">MORE &#62;</p>
+
+            </div>
+            <div class="row ">
+                <div class="col-sm-8 ">
+                     <div class="row ">                    
+                         <div class="card w-50 " style="padding: 10px">
+                            <div style=" height: 170px;background-image:url(https://images.unsplash.com/photo-1570498555051-ac96438038e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80);background-position: center; background-size: cover ">
+                            </div>
+                            <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-header">Last updated 3 minutes ago
+                            </div>
+                            
+                             
+                         </div>
+                         <div class="card w-50" style="padding: 10px">
+                            <div style=" height: 170px;background-image:url(https://images.unsplash.com/photo-1570135460241-4bd244c80f64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);background-position: center; background-size: cover ">
+                            </div>
+                            <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-header">Last updated 3 minutes ago
+                                </div>
+                             
+                         </div>
+                     </div>
+                     <div class="row">                    
+                            <div class="card w-50"style="padding: 10px">
+                                <div style=" height: 170px;background-image:url(https://images.unsplash.com/photo-1485199692108-c3b5069de6a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);background-position: center; background-size: cover ">
+                                </div>
+                               <div class="card-body">
+                                       <h5 class="card-title">Card title</h5>
+                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                               </div>
+                               <div class="card-header">Last updated 3 minutes ago
+                                </div>
+                               
+                                
+                            </div>
+                            <div class="card w-50"style="padding: 10px">
+                                <div style=" height: 170px;background-image:url(https://images.unsplash.com/photo-1439402702863-6434b61e6392?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);background-position: center; background-size: cover ">
+                                </div>
+                               <div class="card-body">
+                                       <h5 class="card-title">Card title</h5>
+                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                               </div>
+                               <div class="card-header">Last updated 3 minutes ago
+                                </div>
+                               
+                                
+                            </div>
+                        </div>
+                 </div>
+                 <div class="col-sm-4 d-none d-sm-block ">
+                     <div class="row h-100">                 
+                       <div class="card h-100" style="padding: 10px">
+                            <div style=" height: 470px;background-image:url(https://images.unsplash.com/photo-1557409710-c1fe922c9b3f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);background-position: center; background-size: cover ">
+                            </div>
+                            <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="card-header">Last updated 10 minutes ago
+                                </div>
+                             
+                       </div>
+                     </div>
+                </div>
+            
+             </div>
+             
+             <div class="row justify-content-between align-content-center m-2">
+                    <h5 class="btn btn-danger">Hot</h5>
+                    <p class="btn">MORE &#62;</p>
+    
+                </div>
+             <div class="row">
+                    <div class="col-sm-4 d-none d-sm-block ">
+                            <div class="row h-100">                 
+                              <div class="card h-100" style="padding: 10px">
+                                   <div style=" height: 470px;background-image:url(https://images.unsplash.com/photo-1467632499275-7a693a761056?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);background-position: center; background-size: cover ">
+                                   </div>
+                                   <div class="card-body">
+                                           <h5 class="card-title">Card title</h5>
+                                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                   </div>
+                                   <div class="card-header">Last updated 10 minutes ago
+                                       </div>
+                                    
+                              </div>
+                            </div>
+                       </div>
+                    <div class="col-sm-8 ">
+                        <div class="row ">                    
+                            <div class="card w-50 " style="padding: 10px">
+                               <div style=" height: 170px;background-image:url(https://images.unsplash.com/photo-1570091089140-793fc59da0a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);background-position: center; background-size: cover ">
+                               </div>
+                               <div class="card-body">
+                                       <h5 class="card-title">Card title</h5>
+                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                               </div>
+                               <div class="card-header">Last updated 3 minutes ago
+                               </div>
+                               
+                                
+                            </div>
+                            <div class="card w-50" style="padding: 10px">
+                               <div style=" height: 170px;background-image:url(https://images.unsplash.com/photo-1527006752498-4c29e325a059?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);background-position: center; background-size: cover ">
+                               </div>
+                               <div class="card-body">
+                                       <h5 class="card-title">Card title</h5>
+                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                               </div>
+                               <div class="card-header">Last updated 3 minutes ago
+                                   </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row">                    
+                               <div class="card w-50"style="padding: 10px">
+                                   <div style=" height: 170px;background-image:url(https://images.unsplash.com/photo-1544126547-4c657414c37b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);background-position: center; background-size: cover ">
+                                   </div>
+                                  <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  </div>
+                                  <div class="card-header">Last updated 3 minutes ago
+                                   </div>
+                                  
+                                   
+                               </div>
+                               <div class="card w-50"style="padding: 10px">
+                                   <div style=" height: 170px;background-image:url(https://images.unsplash.com/photo-1570450418829-4a7d2d33b983?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);background-position: center; background-size: cover ">
+                                   </div>
+                                  <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  </div>
+                                  <div class="card-header">Last updated 3 minutes ago
+                                   </div>
+                                  
+                                   
+                               </div>
+                           </div>
+                    </div>
+
+               
+                </div>
+                
+    </section>
+
+    <footer  class="container-fluid ">
+        
+        <div class="row my-5">
+                <div class="col-9 col-md-6">
+                    <h5>HỆ THỐNG ĐÀO TẠO QUỐC TẾ</h5>
+                    <address>Địa chỉ: Tòa nhà VNPT, 38 YÊN BÁI, QUẬN HẢI CHÂU, THÀNH PHỐ ĐÀ NẴNG</address>
+                    <p>Điện thoại:09281938102983 </p>
+                    <email>Email: tuyensinh@softech.vn</email>
+                    <div style="height: 100px; width: 400px;background-image: url(https://images.unsplash.com/photo-1570458829661-57805c61c764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80); background-position: center; background-size: cover">  
+                    </div>
+                    <p>APTECH PHP-2019</p>
+                            
+                        
+                </div>
+                <div class="col-3 col-md-6 d-flex justify-content-around">
+                    <div class="d-none d-md-block">
+                        <h5>Navigation</h5>
+                        <ul class="list-unstyled">
+                                <li>HOME</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JAVASCRIPT</li>
+                                <li>PHP</li>
+                                <li>CONTACT</li> 
+    
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>About</h5>
+                        <ul class="list-unstyled">
+                            <li>Team</li>
+                            <li>Location</li>
+                            <li>Privacy</li>
+                            <li>Terms</li>
+                        </ul>
+    
+                    </div>
+                
+                
+                </div>
+    
+    </footer>
+</body>
+</html>

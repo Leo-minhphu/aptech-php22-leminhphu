@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bangbieu origin
+    
+    </title>
+    <link rel="stylesheet" href="./boostrap.css">
+    <style>
+    th, td {
+        border: 1px solid
+    }
+        </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>email</th>
+            <th>password</th>
+        </thead>
+        <tbody id="tablebody">
+            <!-- <tr>
+                <td>1</td>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>d</td>
+                <td>e</td>
+                <td>f</td>
+            </tr>
+                <tr>
+                <td>3</td>
+                <td>g</td>
+                <td>h</td>
+                <td>i</td>
+            </tr> -->
+
+        </tbody>
+    </table>
+
+    <button onclick="taobangbieu()">Click de tao bang</button>
+    
+    <script>
+    
+    function taobangbieu(){
+        var dongDauTien = [1, 'a', 'b', 'c'];//đây là array
+        var dongThuHai = [2, 'd', 'e', 'f'];
+        var dongThuBa = [3, 'g', 'h', 'j'];
+ 
+       
+        for (var i=1; i<=3; i++){
+            var taodong = document.createElement("tr");// tạo biến thẻ tr
+            taodong.setAttribute("id", i)
+            // thực hiện  set atribute id vào thẻ tr, id chạy theo vòng lặp từ 1,2,3=> tao ra 3 thẻ tr với 3 id 
+            
+            document.getElementById("tablebody").appendChild(taodong)//nhet biến tao3dong vao id tablebody
+     
+           
+            for (var j=0; j<=3; j++){
+            var data=document.createElement("td");//tạo thẻ td
+            if(i == 1){
+                data.innerHTML= dongDauTien[j];// nếu giá trị i=1 tức là thẻ tr có id là 1, thì thực thi in dữ liệu trong biến array dongdautien
+               
+            }
+            if(i == 2){
+                data.innerHTML= dongThuHai[j];// nếu giá trị i=2 tức là thẻ tr có id là 2, thì thực thi in dữ liệu trong biến array dongthuhai
+            }
+            if(i == 3){
+                data.innerHTML= dongThuBa[j];// nếu giá trị i=3 tức là thẻ tr có id là 3, thì thực thi in dữ liệu trong biến array dongthuba
+            }
+            
+
+            taodong.appendChild(data)//nhét thẻ td và thẻ tr
+           
+
+
+
+            // document.getElementById("1").appendChild(data1)        
+     
+        }
+            }
+        }
+        
+          
+
+
+    
+    </script>
+
+    
+</body>
+</html>
